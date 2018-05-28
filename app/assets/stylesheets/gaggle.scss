@@ -75,3 +75,20 @@ body {
     bottom: 0;
   }
 }
+
+#content {
+  width: 100px;
+  padding-left: 165px;
+
+  .post {
+    width: 600px;
+    h3{
+      font-size: 16px;
+      color: #13009B;
+    }
+
+    a{
+      color: #2D5519
+    }
+  }
+}

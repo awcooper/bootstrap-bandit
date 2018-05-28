@@ -54,7 +54,16 @@
 </div>
 <div id="content">
 
+  <% @pages.each do |page| %>
+    <div class="post">
+      <h3><%= page.title %></h3>
+      <a><%=page.url %></a></br>
+      <%= page.content %>
+    </div>
+  <% end %>
+  <%= will_paginate @pages %>
 </div>
+
 <div id="footer">
 
 </div>
