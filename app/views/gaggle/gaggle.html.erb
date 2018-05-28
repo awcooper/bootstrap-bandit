@@ -12,24 +12,59 @@
   <title>Gaggle</title>
 </head>
 
-  <body>
+<body>
 
-    <div id="headbox">
-
+<div id="headbox">
+  <div id="user-nav">
+    <div id="top-nav">                 
+      <%= image_tag("gaggle-logo.gif", :class => "logo") %>
+      <div class="input-group">
+        <input type="text" class="form-control" aria-describedby="basic-addon2">
+        <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-search"></span></span>
+      </div>
+      <div id="logged-in-options">
+        <span class="glyphicon glyphicon-th"></span>
+        <span class="glyphicon glyphicon-bell"></span>
+        <span class="glyphicon glyphicon-user"></span>
+      </div>
     </div>
-    <div id="content">
-
+    <div id="bottom-nav">
+      <div id="search-options">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">All</span></a>
+              <a class="nav-item nav-link" href="#">News</a>
+              <a class="nav-item nav-link" href="#">Video</a>
+              <a class="nav-item nav-link" href="#">Images</a>
+              <a class="nav-item nav-link" href="#">Shopping</a>
+              <a class="nav-item nav-link" href="#">More</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="search-settings">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#">Settings</a>
+          <a class="nav-item nav-link" href="#">Tools</a>
+        </div>
+      </div>
     </div>
-    <div id="footer">
+  </div>
+</div>
+<div id="content">
 
-    </div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+</div>
+<div id="footer">
+
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
 </html>

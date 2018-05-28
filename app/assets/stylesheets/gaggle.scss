@@ -1,0 +1,75 @@
+// Place all the styles related to the gaggle controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$gaggle-nav-grey: #FAFAFA;
+$gaggle-nav-border: #EBEBEB;
+
+body {
+  padding: 0px !important;
+}
+
+#headbox {
+  width: 100%;
+  height: 112px;
+  background-color: $gaggle-nav-grey;
+  border-bottom: 1px solid $gaggle-nav-border;
+
+}
+
+#content{
+  height: 20px;
+  background-color: white;
+}
+
+#footer {
+
+  width: 100%;
+  height: 100px;
+  background-color: $gaggle-nav-grey;
+  border-top: 1px solid $gaggle-nav-border;
+  position: absolute;
+  bottom: 0px;
+}
+
+#user-nav{
+  padding-top:20px;
+  width: 100%;
+
+
+  .logo {
+    float: left;
+    height: 40px;
+    margin-left: 35px;
+  }
+
+  .input-group {
+    width: 640px;
+    margin-left: 30px;
+    float: left;
+
+  }
+
+  #logged-in-options{
+    float: right;
+
+    .glyphicon {
+      font-size: 20px;
+      marign-left: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+
+#bottom-nav{
+  margin-left: 156px;
+  width: 640px;
+
+  #search-options{
+    float: left;
+  }
+
+
+  #search-settings{
+    float: right;
+  }
+}
