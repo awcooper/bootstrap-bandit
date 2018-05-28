@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+50.times do
+  content = Faker::Lorem.sentence(40)
+  url = "www." + Faker::Lorem.word + ".com"
+  timestamp = Time.now
+  title = Faker::Lorem.sentence(5)
+  PageResult.create!(title: title, timestamp: timestamp, content: content, url: url)
+end
