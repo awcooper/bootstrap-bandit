@@ -1,5 +1,7 @@
 # Bootstrap Bandit
 
+A collection of mock versions of several websites using twitter bootstrap and rails 
+
 ## How to run
 `rails s`
 
