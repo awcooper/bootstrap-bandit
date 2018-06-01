@@ -1,11 +1,26 @@
 // Place all the styles related to the gaggle controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$gaggle-nav-grey: #FAFAFA;
+$gaggle-nav-grey: #f9f9f9;
 $gaggle-nav-border: #EBEBEB;
 
 body {
   padding: 0px !important;
+}
+
+
+.input-group-addon{
+  background-color: white !important;
+  border-left: white !important;
+}
+
+.form-control{
+  border-right: 0px solid white !important;
+  height: 50px !important;
+  border-radius: 3px !important;
+  -moz-border-radius-bottomright: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
 }
 
 #headbox {
@@ -23,11 +38,15 @@ body {
 
     a {
       height: 100%;
+      color: #646464;
       padding-left: 10px;
       padding-right: 10px;
+      display: inline-block;
+
     }
     a:hover {
-      border-bottom: 5px solid lightblue;
+      border-bottom: 5px solid #175ae2;
+      color: #175ae2;
       text-underline: none;
       text-decoration: none;
     }
@@ -79,18 +98,21 @@ body {
 
   #logged-in-options{
     float: right;
+    bottom: 0;
 
     .glyphicon {
       font-size: 20px;
-      marign-left: 5px;
-      margin-right: 10px;
+      margin-top: 10px;
+      marign-left: 20px;
+      margin-right: 20px;
     }
   }
 }
 
 .bottom-nav {
   padding-left: 156px;
-  width: 100%;
+  width: 800px;
+  height:30px;
   position: absolute;
   bottom: 0;
 
