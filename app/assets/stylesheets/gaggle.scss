@@ -13,7 +13,25 @@ body {
   height: 112px;
   background-color: $gaggle-nav-grey;
   border-bottom: 1px solid $gaggle-nav-border;
+  position: relative;
 
+  nav {
+    position: relative;
+    bottom: 0;
+    display: table-cell;
+    vertical-align: middle;
+
+    a {
+      height: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    a:hover {
+      border-bottom: 5px solid lightblue;
+      text-underline: none;
+      text-decoration: none;
+    }
+  }
 }
 
 
@@ -36,7 +54,11 @@ body {
 #user-nav{
   padding-top:20px;
   width: 100%;
+  height:auto;
 
+  #top-nav {
+    height: auto;
+  }
 
   .logo {
     float: left;
@@ -48,6 +70,10 @@ body {
     width: 640px;
     margin-left: 30px;
     float: left;
+
+    .glyphicon {
+      color: blue;
+    }
 
   }
 
@@ -62,10 +88,11 @@ body {
   }
 }
 
-.bottom-nav{
-  margin-left: 156px;
-  width: 640px;
-  display: block;
+.bottom-nav {
+  padding-left: 156px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 
   #search-options{
     float: left;
@@ -90,15 +117,16 @@ body {
     height: auto;
     h3{
       font-size: 16px;
-      color: #13009B;
+      margin-bottom: 0px;
+      a {
+        color: #13009B;
+      }
     }
 
-    a{
-      color: #2D5519
-    }
   }
+}
 
-  .clear {
-    clear: both;
-  }
+
+.clear {
+  clear: both;
 }

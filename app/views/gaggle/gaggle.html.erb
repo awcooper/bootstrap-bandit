@@ -27,6 +27,7 @@
         <span class="glyphicon glyphicon-bell"></span>
         <span class="glyphicon glyphicon-user"></span>
       </div>
+      <br class="clear"/>
     </div>
     <div class="bottom-nav">
       <div id="search-options">
@@ -49,6 +50,7 @@
           <a class="nav-item nav-link" href="#">Tools</a>
         </div>
       </div>
+      <br class="clear"/>
     </div>
   </div>
 </div>
@@ -56,8 +58,8 @@
 
   <% @pages.each do |page| %>
     <div class="post">
-      <h3><%= page.title %></h3>
-      <a><%=page.url %></a></br>
+      <h3><a><%= page.title %></a></h3>
+      <%=page.url %></br>
       <%= page.content %>
     </div>
   <% end %>
