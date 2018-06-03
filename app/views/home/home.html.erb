@@ -45,8 +45,14 @@
       <div class="row">
         <% for i in 0...4 do %>
             <div class="col-xs-6 col-md-3">
-              <%= image_tag("coming-soon.jpg", :class => "img-thumbnail") %>
-              <h2>Comming Soon</h2>
+              <% if @pages.any? %>
+                  <a href=<%=@pages[0] %>><%= image_tag(@pages[0], :class => "img-thumbnail") %></a>
+                  <a href=<%=@pages[0] %>><h2><%= @pages.pop.capitalize %></h2></a>
+              <% else %>
+                  <%= image_tag('coming-soon', :class => "img-thumbnail") %>
+                  <h2>Comming Soon!</h2>
+              <% end %>
+
             </div>
           <% end %>
       </div>
