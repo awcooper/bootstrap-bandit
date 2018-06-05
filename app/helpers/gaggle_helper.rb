@@ -1,0 +1,2 @@
+module GaggleHelper
+end
