@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180528215310) do
+ActiveRecord::Schema.define(version: 20180606024921) do
+
+  create_table "eddit_posts", force: :cascade do |t|
+    t.integer "score"
+    t.string "username"
+    t.string "subeddit"
+    t.string "title"
+    t.datetime "timestamp"
+    t.integer "num_comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "page_results", force: :cascade do |t|
     t.string "title"

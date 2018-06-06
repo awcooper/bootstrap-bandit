@@ -26,6 +26,9 @@ $grey-500: #9E9E9E;
 
     nav {
       display: inline-block;
+      border: none;
+      outline: none;
+
       a {
         color: $grey-500;
         font-size: 9px;
@@ -58,10 +61,20 @@ $grey-500: #9E9E9E;
       display: inline-block;
       position: absolute;
       bottom: 0px;
+      border: none;
+      outline: none;
+
       a {
         margin-right: 5px;
         margin-bottom: 0px;
         background-color: white;
+        border: none;
+        outline: none;
+        display: inline-block;
+      }
+
+      a:first-child{
+        border-bottom: 1px solid #fff;
       }
     }
 

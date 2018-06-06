@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  score: 1
+  username: MyString
+  subeddit: MyString
+  title: MyString
+  timestamp: 2018-06-05 22:49:21
+  num_comments: 1
+
+two:
+  score: 1
+  username: MyString
+  subeddit: MyString
+  title: MyString
+  timestamp: 2018-06-05 22:49:21
+  num_comments: 1

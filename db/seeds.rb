@@ -13,3 +13,19 @@
   title = Faker::Lorem.sentence(5)
   PageResult.create!(title: title, timestamp: timestamp, content: content, url: url)
 end
+
+
+200.times do
+  title = Faker::Lorem.sentence(10).titleize
+  score = rand(1000..20000)
+  subeddit =  ["ASKREDDIT","WORLDNEWS","VIDEOS","FUNNY","TODAYILEARNED","PICS","GAMING"].sample
+  num_comments = rand(100..1000)
+  timestamp = Time.now
+  username = Faker::HarryPotter.character
+  EdditPost.create!(title: title,
+                    timestamp: timestamp,
+                    subeddit: subeddit,
+                    score: score,
+                    username:username,
+                    num_comments:num_comments)
+end
