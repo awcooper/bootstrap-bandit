@@ -24,6 +24,10 @@ $grey-500: #9E9E9E;
     background-color: $grey-240;
     border-bottom: 1px solid $grey-500;
 
+    .btn-group{
+      z-index: 1 ;
+    }
+
     nav {
       display: inline-block;
       border: none;
@@ -93,7 +97,8 @@ $grey-500: #9E9E9E;
 
 
 #content{
-  width: 100%
+  width: 100%;
+
 }
 
 #footer{
