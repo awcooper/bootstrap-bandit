@@ -35,19 +35,49 @@
   </div>
   <div id="content">
 
-    <% @posts.each do |post| %>
-      <div class="media">
-        <%= image_tag('64placeholder', :class => "align-self-center mr-3", :alt => "Generic placeholder image") %>
-        <div class="media-body">
-          <h5 class="mt-0"><%= post.title %></h5>
-          <%= post.username %> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-          vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-          lacinia congue felis in faucibus.
-        </div>
-      </div>
-    <% end %>
+      <ul class="list-unstyled">
+        <% @posts.each do |post| %>
+          <div class="media">
+            <%= image_tag('64placeholder', :class => "align-self-center mr-3", :alt => "Generic placeholder image") %>
+            <div class="media-body">
+              <h5 class="mt-0"><%= post.title %></h5>
+              <%= post.username %> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+              vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+              lacinia congue felis in faucibus.
+            </div>
+          </div>
+         <% end %>
+      </ul>
     <%= will_paginate @posts %>
+  </div>
+  <div id="eddit-footer" class="container">
+    <div id="footer-links" >
+      <div class="footer-box">
+        <ul>
+          <li><a>elem</a></li>
+          <li><a>elem</a></li>
+          <li><a>elem</a></li>
+          <li><a>elem</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <ul>
+          <li><a>elem</a></li>
+          <li><a>elem</a></li>
+          <li><a>elem</a></li>
+          <li><a>elem</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <ul>
+          <li><a>elem</a></li>
+          <li><a>elem</a></li>
+          <li><a>elem</a></li>
+          <li><a>elem</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="clear"></div>
   </div>
 
 </div>

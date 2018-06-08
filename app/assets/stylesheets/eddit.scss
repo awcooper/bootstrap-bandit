@@ -1,6 +1,8 @@
 // Place all the styles related to the eddit controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 $eddit-sky-blue: #cfe4f7;
 $grey-240: #f0f0f0;
@@ -95,14 +97,54 @@ $grey-500: #9E9E9E;
 
 }
 
-
 #content{
   width: 100%;
 
+  .media-body{
+    width: 500px;
+  }
+
+  .img{
+    float: left
+  }
 }
 
-#footer{
+#eddit-footer{
   width: 100%;
+  height: auto;
+  padding-top: 65px;
+  padding-bottom: 75px;
+
+  #footer-links{
+      padding: 10px;
+      width: 700px;
+      display: table;
+      margin: 0 auto;
+      border: 1px solid $grey-240;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+
+    .footer-box:first-child {
+      border: none;
+    }
+
+    .footer-box {
+        display: inline-block;
+        height: 150px;
+        width:200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-left: 1px solid $grey-240;
+        h5 {
+          color: $grey-500;
+          font-size: 14px;
+        }
+        li a{
+
+        }
+      }
+  }
 }
 
 .clear {
