@@ -100,12 +100,27 @@ $grey-500: #9E9E9E;
 #content{
   width: 100%;
 
+  .media{
+    width: 1000px;
+
+    ul {
+      text-decoration: none;
+      li {
+        display: inline-block;
+        a {
+          color: $grey-500;
+        }
+      }
+    }
+  }
   .media-body{
-    width: 500px;
+    display: inline-block;
+    width:100%;
   }
 
   .img{
-    float: left
+    float: left;
+    vertical-align: middle;
   }
 }
 

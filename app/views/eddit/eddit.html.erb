@@ -38,13 +38,21 @@
       <ul class="list-unstyled">
         <% @posts.each do |post| %>
           <div class="media">
+            <div><%=post.score%></div>
             <%= image_tag('64placeholder', :class => "align-self-center mr-3", :alt => "Generic placeholder image") %>
             <div class="media-body">
-              <h5 class="mt-0"><%= post.title %></h5>
+              <h5 class="mt-0"><a><%= post.title %></a></h5>
               <%= post.username %> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
               vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-              lacinia congue felis in faucibus.
+              lacinia congue felis in faucibus. Posted <%= distance_of_time_in_words(post.timestamp,Time.now) %> by <a><%= post.username %></a> to <a>r/<%= post.subeddit.downcase %></a>
             </div>
+            <ul>
+              <li><a>Comments (<%= post.num_comments %>)</a></li>
+              <li><a>share</a></li>
+              <li><a>save</a></li>
+              <li><a>hide</a></li>
+              <li><a>report</a></li>
+            </ul>
           </div>
          <% end %>
       </ul>
