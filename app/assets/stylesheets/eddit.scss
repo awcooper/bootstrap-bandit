@@ -97,11 +97,23 @@ $grey-500: #9E9E9E;
 
 }
 
-#content{
+#eddit-content{
   width: 100%;
+  margin-left:20px;
 
-  .media{
-    width: 1000px;
+  .eddit-post{
+    width: 100%;
+
+    .upvote-box{
+      span {
+        display: inline-block;
+      }
+    }
+
+    .upvote-box{
+      display: inline-block;
+      vertical-align: center;
+    }
 
     ul {
       text-decoration: none;
@@ -113,13 +125,14 @@ $grey-500: #9E9E9E;
       }
     }
   }
+
   .media-body{
     display: inline-block;
-    width:100%;
+    width:900px;
   }
 
   .img{
-    float: left;
+    display: inline-block;
     vertical-align: middle;
   }
 }
