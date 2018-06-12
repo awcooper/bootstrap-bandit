@@ -38,6 +38,7 @@ $grey-500: #9E9E9E;
       a {
         color: $grey-500;
         font-size: 9px;
+        cursor: pointer;
       }
     }
 
@@ -77,6 +78,7 @@ $grey-500: #9E9E9E;
         border: none;
         outline: none;
         display: inline-block;
+        cursor: pointer;
       }
 
       a:first-child{
@@ -92,6 +94,7 @@ $grey-500: #9E9E9E;
       background-color: white;
       height: 24px;
       width: 227px;
+      font-size: 10px;
     }
   }
 
@@ -101,12 +104,18 @@ $grey-500: #9E9E9E;
   width: 100%;
   margin-left:20px;
 
+  .eddit-post-li{
+    text-decoration: none;
+  }
+
   .eddit-post{
     width: 100%;
 
     .upvote-box{
       span {
         display: inline-block;
+        width: 100%;
+        text-align: center;
       }
     }
 
@@ -121,19 +130,30 @@ $grey-500: #9E9E9E;
         display: inline-block;
         a {
           color: $grey-500;
+          cursor: pointer;
         }
       }
     }
   }
 
-  .media-body{
+  .img-container {
+    height: 100%;
     display: inline-block;
-    width:900px;
   }
+
+
+  .media-body {
+    display: inline-block;
+    width: 900px;
+    hegiht: 100%;
+    vertical-align: center;
+  }
+
 
   .img{
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: center;
+
   }
 }
 

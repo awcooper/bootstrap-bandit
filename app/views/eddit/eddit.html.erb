@@ -16,48 +16,73 @@
 <div id="eddit-headbox">
   <div id="subeddit-box">
     <nav>
-      <a>FIRST</a>
-      <a>SECOND</a>
-      <a>THIRD</a>
+      <a>POPULAR</a>
+      <a>ALL</a>
+      <a>RANDOM</a>
+      <a>ASKEDDIT</a>
+      <a>VIDEOS</a>
+      <a>FUNNY</a>
+      <a>TODAYILEARNED</a>
+      <a>PICS</a>
+      <a>GAMING</a>
+      <a>MOVIES</a>
+      <a>NEWS</a>
+      <a>GIFTS</a>
+      <a>MILDLYINTERESTING</a>
+      <a>AWW</a>
+      <a>SHOWERTHOUGHTS</a>
+      <a>TELEVISION</a>
+      <a>JOKES</a>
+      <a>SCIENCE</a>
+      <a>OLDSCHOOLCOOL</a>
+      <a>SPORTS</a>
+      <a>IMA</a>
+
     </nav>
     <span id="more">MORE >></span>
   </div>
   <div id="head-nav">
     <%= image_tag('eddit-logo') %>
     <nav >
-      <a>home</a>
-      <a>home</a>
-      <a>home</a>
-      <a>home</a>
+      <a>hot</a>
+      <a>new</a>
+      <a>rising</a>
+      <a>controversial</a>
+      <a>top</a>
     </nav>
     <div id="please-sign-up">
+      Want to join? Log in or sign up in seconds | English
     </div>
   </div>
   <div id="eddit-content">
 
       <ul class="list-unstyled">
         <% @posts.each do |post| %>
-          <div class="eddit-post">
-            <div class="upvote-box">
-              <span class="glyphicon glyphicon-arrow-up"></span>
-              <div><%=post.score%></div>
-              <span class="glyphicon glyphicon-arrow-down"></span>
+          <li class="eddit-post-li">
+              <div class="eddit-post">
+                <div class="upvote-box">
+                  <span class="glyphicon glyphicon-arrow-up"></span>
+                  <div><%=post.score%></div>
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                </div>
+                <div class="img-container">
+                 <%= image_tag('64placeholder', :class => "align-self-center mr-3", :alt => "Generic placeholder image") %>
+                </div>
+                <div class="media-body">
+                  <h5 class="mt-0"><a><%= post.title %></a></h5>
+                  <%= post.username %> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+                  vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+                  lacinia congue felis in faucibus. Posted <%= distance_of_time_in_words(post.timestamp,Time.now) %> ago by <a><%= post.username %></a> to <a>r/<%= post.subeddit.downcase %></a>
+                </div>
+                <ul>
+                  <li><a>Comments (<%= post.num_comments %>)</a></li>
+                  <li><a>share</a></li>
+                  <li><a>save</a></li>
+                  <li><a>hide</a></li>
+                  <li><a>report</a></li>
+                </ul>
             </div>
-            <%= image_tag('64placeholder', :class => "align-self-center mr-3", :alt => "Generic placeholder image") %>
-            <div class="media-body">
-              <h5 class="mt-0"><a><%= post.title %></a></h5>
-              <%= post.username %> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-              vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-              lacinia congue felis in faucibus. Posted <%= distance_of_time_in_words(post.timestamp,Time.now) %> ago by <a><%= post.username %></a> to <a>r/<%= post.subeddit.downcase %></a>
-            </div>
-            <ul>
-              <li><a>Comments (<%= post.num_comments %>)</a></li>
-              <li><a>share</a></li>
-              <li><a>save</a></li>
-              <li><a>hide</a></li>
-              <li><a>report</a></li>
-            </ul>
-          </div>
+          </li>
          <% end %>
       </ul>
     <%= will_paginate @posts %>
