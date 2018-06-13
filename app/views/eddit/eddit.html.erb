@@ -73,14 +73,14 @@
                   <%= post.username %> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
                   vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
                   lacinia congue felis in faucibus. Posted <%= distance_of_time_in_words(post.timestamp,Time.now) %> ago by <a><%= post.username %></a> to <a>r/<%= post.subeddit.downcase %></a>
+                  <ul>
+                    <li><a>Comments (<%= post.num_comments %>)</a></li>
+                    <li><a>share</a></li>
+                    <li><a>save</a></li>
+                    <li><a>hide</a></li>
+                    <li><a>report</a></li>
+                  </ul>
                 </div>
-                <ul>
-                  <li><a>Comments (<%= post.num_comments %>)</a></li>
-                  <li><a>share</a></li>
-                  <li><a>save</a></li>
-                  <li><a>hide</a></li>
-                  <li><a>report</a></li>
-                </ul>
             </div>
           </li>
          <% end %>

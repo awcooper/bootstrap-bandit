@@ -110,12 +110,17 @@ $grey-500: #9E9E9E;
 
   .eddit-post{
     width: 100%;
+    margin-top: 3px;
+    margin-bottom: 3px;
 
     .upvote-box{
+      vertical-align: middle;
+
       span {
         display: inline-block;
         width: 100%;
         text-align: center;
+        hover: pointer;
       }
     }
 
@@ -126,8 +131,11 @@ $grey-500: #9E9E9E;
 
     ul {
       text-decoration: none;
+      margin-left: 1px;
+      display: inline;
+
       li {
-        display: inline-block;
+        display: inline;
         a {
           color: $grey-500;
           cursor: pointer;
@@ -137,8 +145,14 @@ $grey-500: #9E9E9E;
   }
 
   .img-container {
-    height: 100%;
     display: inline-block;
+    vertical-align: center;
+    margin-right: 3px;
+
+    .img{
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 
 
@@ -146,15 +160,11 @@ $grey-500: #9E9E9E;
     display: inline-block;
     width: 900px;
     hegiht: 100%;
-    vertical-align: center;
+    vertical-align: middle;
   }
 
 
-  .img{
-    display: inline-block;
-    vertical-align: center;
 
-  }
 }
 
 #eddit-footer{
