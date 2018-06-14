@@ -18,7 +18,7 @@ end
 200.times do
   title = Faker::Lorem.sentence(10).titleize
   score = rand(1000..20000)
-  subeddit =  ["ASKREDDIT","WORLDNEWS","VIDEOS","FUNNY","TODAYILEARNED","PICS","GAMING"].sample
+  subeddit =  ["ASKEDDIT","WORLDNEWS","VIDEOS","FUNNY","TODAYILEARNED","PICS","GAMING"].sample
   num_comments = rand(100..1200)
   timestamp = Time.now
   username = Faker::HarryPotter.character
