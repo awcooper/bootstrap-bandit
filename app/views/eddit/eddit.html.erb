@@ -55,41 +55,27 @@
     </div>
   </div>
   <div id="eddit-content">
-    <div>
-      <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Dropdown
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
+      <div id="eddit-filter-container">
+        <span>Popular In: </span>
+        <select class="selectpicker">
+          <option>United States</option>
+          <option>Modor</option>
+          <option>Nardia</option>
+        </select>
+        <span>Select State: </span>
+        <select class="selectpicker">
+          <option>New Jersey</option>
+          <option>Bikini Bottom</option>
+          <option>Gotham</option>
+        </select>
       </div>
-      <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Dropdown
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </div>
-    </div>
       <ol id="eddit-ranks">
         <% @posts.each do |post| %>
           <li class="eddit-post-li">
               <div class="eddit-post">
                 <div class="upvote-box">
                   <span class="glyphicon glyphicon-arrow-up"></span>
-                  <span><%=number_to_human_size(post.score)%></span>
+                  <span><%= number_to_human(post.score, :format => '%n%u', :units => {:thousand => 'K'})%></span>
                   <span class="glyphicon glyphicon-arrow-down"></span>
                 </div>
                 <div class="img-container">
