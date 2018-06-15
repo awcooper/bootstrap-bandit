@@ -89,7 +89,7 @@
               <div class="eddit-post">
                 <div class="upvote-box">
                   <span class="glyphicon glyphicon-arrow-up"></span>
-                  <div><%=post.score%></div>
+                  <span><%=number_to_human_size(post.score)%></span>
                   <span class="glyphicon glyphicon-arrow-down"></span>
                 </div>
                 <div class="img-container">
@@ -97,9 +97,7 @@
                 </div>
                 <div class="media-body">
                   <h5 class="mt-0"><a><%= post.title %></a></h5>
-                  <%= post.username %> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-                  vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-                  lacinia congue felis in faucibus. Posted <%= distance_of_time_in_words(post.timestamp,Time.now) %> ago by <a><%= post.username %></a> to <a>r/<%= post.subeddit.downcase %></a>
+                  <%= post.username %> <%= distance_of_time_in_words(post.timestamp,Time.now) %> ago by <a><%= post.username %></a> to <a>r/<%= post.subeddit.downcase %></a>
                   <ul>
                     <li><a>Comments (<%= post.num_comments %>)</a></li>
                     <li><a>share</a></li>

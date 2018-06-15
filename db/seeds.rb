@@ -16,7 +16,7 @@ end
 
 
 200.times do
-  title = Faker::Lorem.sentence(10).titleize
+  title = Faker::Lorem.sentence(rand(5..15)).titleize
   score = rand(1000..20000)
   subeddit =  ["ASKEDDIT","WORLDNEWS","VIDEOS","FUNNY","TODAYILEARNED","PICS","GAMING"].sample
   num_comments = rand(100..1200)
