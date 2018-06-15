@@ -43,6 +43,7 @@ $grey-500: #9E9E9E;
         color: $grey-500;
         font-size: 9px;
         cursor: pointer;
+        margin-left: 10px;
       }
     }
 
@@ -53,6 +54,9 @@ $grey-500: #9E9E9E;
       right: 0;
     }
 
+    #more:hover{
+      text-decoration: underline;
+    }
   }
 
   #head-nav{
@@ -66,6 +70,7 @@ $grey-500: #9E9E9E;
       display: inline-block;
       width: 126px;
       height: 42px;
+      margin-left: 10px
     }
 
     nav{
@@ -97,8 +102,10 @@ $grey-500: #9E9E9E;
       border-top-left-radius: 20px;
       background-color: white;
       height: 24px;
-      width: 227px;
-      font-size: 10px;
+      width: 277px;
+      padding-top: 5px;
+      padding-left: 5px;
+      font-size: 11px;
     }
   }
 
