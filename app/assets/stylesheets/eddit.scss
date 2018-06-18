@@ -18,9 +18,15 @@ $grey-500: #9E9E9E;
     margin-bottom: 5px;
   }
 
-  #sign-up-form{
-    float:right;
-    width: 300px;
+  #sign-up-container {
+    display: block;
+    float: right;
+    border: 1px solid black;
+    margin-right: 30px;
+
+    #sign-up-form {
+
+    }
   }
 }
 
@@ -179,7 +185,7 @@ $grey-500: #9E9E9E;
 
   .media-body {
     display: inline-block;
-    width: 900px;
+    width: 700px;
     hegiht: 100%;
     vertical-align: middle;
 

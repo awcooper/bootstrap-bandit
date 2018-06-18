@@ -13,14 +13,6 @@ $gaggle-nav-border: #EBEBEB;
   border-left: white !important;
 }
 
-.form-control{
-  border-right: 0px solid white !important;
-  height: 50px !important;
-  border-radius: 3px !important;
-  -moz-border-radius-bottomright: 0px !important;
-  border-bottom-right-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-}
 
 #headbox {
   width: 100%;
@@ -28,6 +20,16 @@ $gaggle-nav-border: #EBEBEB;
   background-color: $gaggle-nav-grey;
   border-bottom: 1px solid $gaggle-nav-border;
   position: relative;
+
+  .form-control{
+    border-right: 0px solid white !important;
+    height: 50px !important;
+    border-radius: 3px !important;
+    -moz-border-radius-bottomright: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+  }
+
 
   nav {
     position: relative;
