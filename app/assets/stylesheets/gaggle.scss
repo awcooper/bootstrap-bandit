@@ -4,13 +4,8 @@
 $gaggle-nav-grey: #f9f9f9;
 $gaggle-nav-border: #EBEBEB;
 
-#gaggle-body {
+#gaggle-body{
   padding: 0px !important;
-}
-
-.input-group-addon{
-  background-color: white !important;
-  border-left: white !important;
 }
 
 
@@ -21,14 +16,20 @@ $gaggle-nav-border: #EBEBEB;
   border-bottom: 1px solid $gaggle-nav-border;
   position: relative;
 
-  .form-control{
-    border-right: 0px solid white !important;
-    height: 50px !important;
-    border-radius: 3px !important;
-    -moz-border-radius-bottomright: 0px !important;
-    border-bottom-right-radius: 0px !important;
-    border-top-right-radius: 0px !important;
+  #gaggle-search.form-control {
+    border-right: 0px solid white;
+    height: 50px;
+    border-radius: 3px;
+    -moz-border-radius-bottomright: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
   }
+
+  #basic-addon2.input-group-addon{
+    background-color: white;
+    border-left: white;
+  }
+
 
 
   nav {
