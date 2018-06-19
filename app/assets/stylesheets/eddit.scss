@@ -5,6 +5,9 @@
 @import "bootstrap";
 
 $eddit-sky-blue: #cfe4f7;
+$eddit-not-selected-nav-blue: #eff7ff; //lololol
+
+
 $grey-240: #f0f0f0;
 $grey-500: #9E9E9E;
 
@@ -12,6 +15,10 @@ $grey-500: #9E9E9E;
     padding: 0px;
     width: 100%;
     height: 1000px;
+
+  a:hover{
+    cursor: pointer;
+  }
 
   #eddit-filter-container{
     margin-top: 5px;
@@ -22,11 +29,31 @@ $grey-500: #9E9E9E;
     display: block;
     float: right;
     border: 1px solid black;
-    margin-right: 30px;
+    padding: 10px;
+    width: 300px;
 
-    #sign-up-form {
-
+    #email-form.form-group{
+      margin-bottom: 20px;
     }
+
+    #password-form.form-group{
+      margin-bottom: 20px;
+    }
+  }
+
+  #ad-box{
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    clear: right;
+    float: right;
+    background-color: $eddit-sky-blue;
+    margin-top: 10px;
+  }
+
+  #post-box{
+    width: 100%;
+    min-width: 900px;
   }
 }
 
@@ -34,12 +61,28 @@ $grey-500: #9E9E9E;
   width: 100%;
   position: relative;
 
+  #subeddit-select-wrapper.select{
+    display: inline-block;
+    width: auto;
+    height: auto;
+  }
+
+  #subeddit-select.btn {
+    margin-top: -10px;
+    height: 5px;
+    width: 10px;
+    margin-right: 80px;
+    background-color: $grey-240;
+    display: block;
+  }
+
   #subeddit-box{
     width: 100%;
     height: 20px;
     position: relative;
     background-color: $grey-240;
     border-bottom: 1px solid $grey-500;
+    min-width: 1400px;
 
     .btn-group{
       z-index: 1 ;
@@ -74,6 +117,7 @@ $grey-500: #9E9E9E;
     width: 100%;
     height: 48px;
     border-bottom: 1px solid darkblue;
+    z-index: 1;
     background-color: $eddit-sky-blue;
     position: relative;
 
@@ -93,16 +137,24 @@ $grey-500: #9E9E9E;
 
       a {
         margin-right: 5px;
+        padding: 2px;
         margin-bottom: 0px;
-        background-color: white;
+        background-color: $eddit-not-selected-nav-blue;
         border: none;
         outline: none;
         display: inline-block;
         cursor: pointer;
       }
 
+      a:hover{
+        text-decoration: none;
+      }
+
       a:first-child{
         border-bottom: 1px solid #fff;
+        background-color: #fff;
+        z-index: 10;
+        color: orangered;
       }
     }
 
@@ -124,7 +176,10 @@ $grey-500: #9E9E9E;
 
 #eddit-content{
   width: 100%;
+  max-width: 1500px;
   margin-left:20px;
+  padding-right: 30px;
+
 
   .dropdown{
     display: inline-block;
