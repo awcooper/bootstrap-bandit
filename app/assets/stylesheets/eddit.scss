@@ -138,11 +138,12 @@ $grey-500: #9E9E9E;
       a {
         margin-right: 5px;
         padding: 2px;
-        margin-bottom: 0px;
+        margin-bottom: -1px;
         background-color: $eddit-not-selected-nav-blue;
         border: none;
         outline: none;
         display: inline-block;
+        border-bottom: 1px solid darkblue;
         cursor: pointer;
       }
 
@@ -151,10 +152,13 @@ $grey-500: #9E9E9E;
       }
 
       a:first-child{
-        border-bottom: 1px solid #fff;
         background-color: #fff;
-        z-index: 10;
+        z-index: 1000;
         color: orangered;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid darkblue;
+        border-left: 1px solid darkblue;
+        border-top: 1px solid darkblue;
       }
     }
 
@@ -163,7 +167,7 @@ $grey-500: #9E9E9E;
       right: 0;
       bottom: 0;
       border-top-left-radius: 20px;
-      background-color: white;
+      background-color: $eddit-not-selected-nav-blue;
       height: 24px;
       width: 277px;
       padding-top: 5px;
