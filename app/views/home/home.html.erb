@@ -46,13 +46,13 @@
         <% for i in 0...4 do %>
             <div class="col-xs-6 col-md-3">
               <% if @pages.any? %>
-                  <a href=<%=@pages[0] %>><%= image_tag(@pages[0], :class => "img-thumbnail") %></a>
-                  <a href=<%=@pages[0] %>><h2><%= @pages.pop.capitalize %></h2></a>
+                  <a href=<%=@pages.first %>><%= image_tag(@pages.first, :class => "img-thumbnail") %></a>
+                  <a href=<%=@pages.first %>><h2><%= @pages.first.capitalize %></h2></a>
+                  <% @pages = @pages.drop(1) %>
               <% else %>
                   <%= image_tag('coming-soon', :class => "img-thumbnail") %>
                   <h2>Comming Soon!</h2>
               <% end %>
-
             </div>
           <% end %>
       </div>

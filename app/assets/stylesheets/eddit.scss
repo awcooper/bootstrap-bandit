@@ -193,6 +193,10 @@ $grey-500: #9E9E9E;
     text-decoration: none;
   }
 
+  #eddit-ranks{
+    min-width: 700px;
+  }
+
   .eddit-post{
     width: 100%;
     margin-top: 3px;
@@ -248,6 +252,9 @@ $grey-500: #9E9E9E;
     hegiht: 100%;
     vertical-align: middle;
 
+    h5{
+      margin-bottom: 4px;
+    }
 
   }
 
