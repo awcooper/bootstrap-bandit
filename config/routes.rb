@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'home#home'
   get "gaggle" => "gaggle#gaggle"
   get "eddit" => "eddit#eddit"
+  get "metube" => "metube#metube"
 end

@@ -1,0 +1,26 @@
+// Place all the styles related to the metube controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#metube-header{
+  span{
+    font-size: 25px;
+    margin-right: 15px;
+  }
+
+  #left-icons{
+    display: inline-block;
+  }
+
+  #right-icons{
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  #search-bar{
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
