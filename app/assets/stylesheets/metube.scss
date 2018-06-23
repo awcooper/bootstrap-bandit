@@ -24,3 +24,51 @@
     margin: 0 auto;
   }
 }
+
+#metube-content{
+
+  #content-container{
+    width: 1000px;
+    margin: 0 auto;
+    height: auto;
+
+    #ad-box{
+      float: right;
+      width: 35%;
+    }
+
+    #video-box{
+      float: left;
+      width: 65%;
+      padding: 10px;
+    }
+
+    #comments{
+      float: left;
+      width: 65%;
+    }
+
+    #recommended-box{
+      float: right;
+      width: 35%;
+
+      .rec-video{
+        margin-bottom: 12px;
+
+        img{
+          display: inline-block;
+          margin-right: 10px;
+        }
+
+        .rec-video-info{
+          display: inline-block;
+
+          h5{
+            font-size: 12px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
