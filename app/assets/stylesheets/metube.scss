@@ -47,6 +47,7 @@
       float: left;
       width: 65%;
       margin-bottom: 10px;
+      height:auto;
 
       .comment{
         height:100%;
@@ -54,12 +55,17 @@
 
         .avatar-thumbnail{
           display: inline-block;
+          vertical-align: top;
         }
 
         .comment-box{
+          .username{
+            font-weight: bold;
+          }
 
           display: inline-block;
           margin-left: 10px;
+          min-height: 90px;
           width: 80%;
         }
       }

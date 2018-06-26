@@ -63,8 +63,12 @@
     <div id="comments">
       <% for i in 1..10 %>
         <div class="comment">
-          <div class="avatar-thumbnail"> <%= image_tag('64placeholder.svg') %></div>
-          <div class="comment-box"> <%= Faker::Lorem.sentence(30)%></div>
+          <%= image_tag('64placeholder.svg', :class =>'avatar-thumbnail') %>
+          <div class="comment-box">
+            <span class="username">Username</span>
+            <span class="ago">So long ago</span>
+            <p><%= Faker::Lorem.sentence(30)%></p>
+          </div>
         </div>
       <% end %>
     </div>
