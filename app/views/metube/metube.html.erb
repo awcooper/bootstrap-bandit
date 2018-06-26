@@ -61,9 +61,12 @@
 
     </div>
     <div id="comments">
-      <div class="comment">
-
-      </div>
+      <% for i in 1..10 %>
+        <div class="comment">
+          <div class="avatar-thumbnail"> <%= image_tag('64placeholder.svg') %></div>
+          <div class="comment-box"> <%= Faker::Lorem.sentence(30)%></div>
+        </div>
+      <% end %>
     </div>
     <div class="clear">
     </div>
