@@ -4,24 +4,28 @@
 
 
 #metube-header{
+  width: 100%;
+
   span{
     font-size: 25px;
     margin-right: 15px;
   }
 
   #left-icons{
-    display: inline-block;
+    display: block;
+    float: left;
+    margin-left: 20px;
   }
 
   #right-icons{
-    display: inline-block;
-    margin-right: 10px;
+    display: block;
+    float: right;
+    margin-right: 20px;
   }
 
   #search-bar{
-    display: inline-block;
-    width: 50%;
     margin: 0 auto;
+    display: block;
   }
 }
 
