@@ -1,7 +1,8 @@
 // Place all the styles related to the metube controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 #metube-header{
   width: 100%;
@@ -26,11 +27,12 @@
   #search-bar{
     margin: 0 auto;
     display: block;
+    width: 500px;
   }
 }
 
 #metube-content{
-
+  margin-top: 15px;
   #content-container{
     width: 1000px;
     margin: 0 auto;
