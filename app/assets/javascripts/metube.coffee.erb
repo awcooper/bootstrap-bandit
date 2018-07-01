@@ -1,0 +1,27 @@
+# Place all the behaviors and hooks related to the matching controller here.
+# All this logic will automatically be available in application.js.
+# You can use CoffeeScript in this file: http://coffeescript.org/
+sleep = (ms) ->
+  start = new Date().getTime()
+  continue while new Date().getTime() - start < ms
+
+jQuery ->
+  if $('#metube-comments').size() > 0
+    console.log($("#loading").length)
+    $(window).on 'scroll', ->
+      if ( $(window).scrollTop() > $(document).height() - $(window).height() - 60 )
+        sleep(1000)
+        $('#metube-comments').append("""
+                  <% for i in 1..10 %>
+                    <div class="comment">
+                      <%= image_tag('64placeholder.svg', :class => 'avatar-thumbnail') %>
+                      <div class="comment-box">
+                        <span class="username">Username</span>
+                        <span class="ago">So long ago</span>
+                        <p><%= Faker::Lorem.sentence(30) %></p>
+                      </div>
+                    </div>
+                  <% end %>
+                  """)
+        $("#loading").remove()
+      return
