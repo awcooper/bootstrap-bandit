@@ -4,6 +4,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#loading{
+  width: 120px;
+  height: 120px;
+}
+
 #metube-header{
   width: 100%;
 
@@ -49,7 +54,7 @@
       padding: 10px;
     }
 
-    #comments{
+    #metube-comments{
       float: left;
       width: 65%;
       margin-bottom: 10px;
