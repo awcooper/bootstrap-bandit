@@ -17,6 +17,8 @@
 <div id="metube-header">
   <div id="left-icons">
     <span class="glyphicon glyphicon-align-justify"></span>
+    <%= image_tag('metube-logo', :class => "rec-icon") %>
+    <h2>Metube</h2>
   </div>
   <div class="input-group mb-3" id="search-bar">
     <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
@@ -41,10 +43,12 @@
         <div class="rec-video">
           <%= image_tag('170x100placeholder.png', :class => "rec-icon") %>
             <div class="rec-video-info">
-              <h5>This is  a pretty cool video</h5>
-              <span>jackson</span>
-              <span>168k views</span>
-              <span class="label label-default">New</span>
+              <h5 class="tittle">Dank Video</h5>
+              <span class="username"><%= Faker::HarryPotter.character %></span>
+              <span class="views">168k views</span>
+              <% if rand(1..10) > 7 %>
+               <span class="label label-default">New</span>
+              <% end %>
             </div>
         </div>
       <% end %>

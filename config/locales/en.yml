@@ -1,7 +1,6 @@
-# Files in the config/locales directory are used for internationalization
 # and are automatically loaded by Rails. If you want to use locales other
 # than English, add the necessary files in this directory.
-#
+## Files in the config/locales directory are used for internationalization
 # To use the locales, use `I18n.t`:
 #
 #     I18n.t 'hello'
@@ -31,7 +30,7 @@
 
 en:
   will_paginate:
-    previous_label: <button type="button" class="btn btn-primary btn-sm">< Prev</button> |
+    previous_label: <button type="button" class="btn btn-primary btn-sm">< Prev</button>
     next_label: <button type="button" class="btn btn-primary btn-sm">Next ></button>
 
 

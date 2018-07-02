@@ -9,6 +9,10 @@
   height: 120px;
 }
 
+#metube-body{
+  padding-top: 15px;
+}
+
 #metube-header{
   width: 100%;
 
@@ -17,16 +21,35 @@
     margin-right: 15px;
   }
 
-  #left-icons{
+  #left-icons {
     display: block;
     float: left;
     margin-left: 20px;
-  }
 
+    h2 {
+      font-family: "Nanum Gothic";
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    img {
+      display: inline-block;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
   #right-icons{
     display: block;
     float: right;
     margin-right: 20px;
+    margin-top: 10px;
+    top: 50%
   }
 
   #search-bar{
@@ -89,6 +112,7 @@
       .rec-video{
         margin-bottom: 12px;
 
+
         img{
           display: inline-block;
           margin-right: 10px;
@@ -96,6 +120,21 @@
 
         .rec-video-info{
           display: inline-block;
+
+          h5.tittle {
+            margin: 0;
+            font-size: 13px;
+          }
+
+          .username{
+            display: block;
+            color: gray;
+          }
+
+          .views{
+            display: inline-block;
+            color: gray;
+          }
 
           h5{
             font-size: 12px;
