@@ -30,4 +30,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  will_paginate:
+    previous_label: <button type="button" class="btn btn-primary btn-sm">< Prev</button> |
+    next_label: <button type="button" class="btn btn-primary btn-sm">Next ></button>
+
+
+

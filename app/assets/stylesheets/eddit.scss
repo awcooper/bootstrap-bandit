@@ -12,9 +12,17 @@ $grey-240: #f0f0f0;
 $grey-500: #9E9E9E;
 
 #eddit-body {
-    padding: 0px;
-    width: 100%;
-    height: 1000px;
+  padding: 0px;
+  width: 100%;
+  height: 1000px;
+
+  .next_page.disabled {
+    display: none;
+  }
+
+  .previous_page.disabled {
+    display: none;
+  }
 
   a:hover{
     cursor: pointer;
@@ -222,7 +230,7 @@ $grey-500: #9E9E9E;
     ul {
       text-decoration: none;
       padding: 0px;
-      display: inline;
+      display: block;
 
       li {
         display: inline;

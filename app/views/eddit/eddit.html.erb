@@ -110,7 +110,7 @@
                 </div>
                 <div class="media-body">
                   <h5 class="mt-0"><a><%= post.title %></a></h5>
-                  <%= post.username %> <%= distance_of_time_in_words(post.timestamp,Time.now) %> ago by <a><%= post.username %></a> to <a>r/<%= post.subeddit.downcase %></a>
+                  submitted <%= distance_of_time_in_words(post.timestamp,Time.now) %> ago by <a><%= post.username %></a> to <a>r/<%= post.subeddit.downcase %></a>
                   <ul>
                     <li><a>Comments (<%= post.num_comments %>)</a></li>
                     <li><a>share</a></li>
@@ -123,7 +123,7 @@
           </li>
          <% end %>
       </ol>
-    <%= will_paginate @posts %>
+    View More: <%= will_paginate @posts, :page_links=>false %>
     </div>
   </div>
   <div id="eddit-footer" class="container">
