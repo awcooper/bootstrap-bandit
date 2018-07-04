@@ -30,6 +30,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'faker'
 gem 'will_paginate', '~> 3.1.0'
+gem 'google-api-client', '<0.9'
+gem 'retriable', '3.0.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
