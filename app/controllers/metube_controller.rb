@@ -1,11 +1,9 @@
 class MetubeController < ApplicationController
   require 'google/apis/youtube_v3'
 
-  DEVELOPER_KEY = ENV.fetch("GOOGLE_DEVELOPER_KEY")
-
   def get_service
     service = Google::Apis::YoutubeV3::YouTubeService.new
-    service.key = DEVELOPER_KEY
+    service.key =  ENV["GOOGLE_DEVELOPER_KEY"]
     service
   end
 
