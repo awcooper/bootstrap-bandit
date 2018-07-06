@@ -6,8 +6,8 @@
       <span class="ago">So long ago</span>
       <p><%= Faker::Lorem.sentence(30) %></p>
       <div class="rate-box">
-        <span class="glyphicon glyphicon-thumbs-up"></span><% if rand() > 0.3 %><%= rand(1..100) %> <% end %>
-        <span class="glyphicon glyphicon-thumbs-down"></span><% if rand() > 0.7 %><%= rand(1..100) %> <% end %>
+        <span class="glyphicon glyphicon-thumbs-up"><% if rand() > 0.3 %><%= rand(1..100) %> <% end %></span>
+        <span class="glyphicon glyphicon-thumbs-down"><% if rand() > 0.7 %><%= rand(1..100) %> <% end %></span>
         <span class="reply"> REPLY</span>
       </div>
     </div>

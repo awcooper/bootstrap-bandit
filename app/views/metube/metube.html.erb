@@ -62,7 +62,24 @@
     </div>
     <div id="video-info-box">
       <h2><%= Faker::Lorem.sentence(rand(2..7)) %></h2>
-      <div id="video-info-options"></div>
+      <div id="video-info-options">
+        <div class="left-options">
+          <h5>102,109 views</h5>
+        </div>
+        <div class="right-options">
+          <div class="video-likes">
+            <span class="glyphicon glyphicon-thumbs-up"><% if rand() > 0.3 %><%= rand(1..100) %><% end %></span>
+            <span class="glyphicon glyphicon-thumbs-down"></span>
+          </div>
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+          <span class="glyphicon glyphicon-share-alt"></span>
+          <span class="glyphicon glyphicon-option-horizontal"></span>
+
+        </div>
+        <div class="clear">
+
+        </div>
+      </div>
       <p><%= Faker::Lorem.sentence(rand(14..150)) %></p>
     </div>
     <div id="metube-comments">

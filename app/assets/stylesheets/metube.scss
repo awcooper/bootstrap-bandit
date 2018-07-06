@@ -13,6 +13,11 @@
   padding-top: 15px;
 }
 
+.x170by100{
+  width: 170px;
+  height: 100px;
+}
+
 #metube-header{
   width: 100%;
   display: flex;
@@ -98,9 +103,52 @@
     #video-info-box{
       float: left;
       width: 65%;
+      padding: 10px;
       border-bottom: 1px solid lightgrey;
+
+     p {
+       font-family: Roboto, Arial, sans-serif;
+       font-size: 14px;
+     }
+
+      h2 {
+        font-weight: bold;
+        font-family: Roboto, Arial, sans-serif;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        padding: 0;
+      }
+
       #video-info-options{
 
+          .right-options{
+            display: block;
+            float: right;
+
+            .video-likes{
+              display: inline-block;
+              width: 80px;
+              border-bottom: 1px solid blue;
+              span{
+                width: 47%;
+                display: inline-block;
+                margin: 0;
+              }
+            }
+
+            span {
+              font-size: 16px;
+              margin-left: 20px;
+              display: inline-block;
+            }
+          }
+
+          .left-options{
+            display: block;
+            float: left;
+            font-size: 16px;
+            color: darkgrey;
+          }
       }
 
     }
@@ -143,6 +191,7 @@
 
             span{
               cursor: pointer;
+              width: 40px;
               margin-right: 5px;
             }
 
