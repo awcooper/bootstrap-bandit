@@ -80,7 +80,7 @@
 #metube-content{
   margin-top: 15px;
   #content-container{
-    width: 1000px;
+    width: 1300px;
     margin: 0 auto;
     height: auto;
 
@@ -95,15 +95,27 @@
       padding: 10px;
     }
 
+    #video-info-box{
+      float: left;
+      width: 65%;
+      border-bottom: 1px solid lightgrey;
+      #video-info-options{
+
+      }
+
+    }
+
     #metube-comments{
       float: left;
       width: 65%;
+      padding: 10px;
       margin-bottom: 10px;
       height:auto;
 
       .comment{
         height:100%;
         position: relative;
+        margin-bottom: 5px;
 
         .avatar-thumbnail{
           display: inline-block;
@@ -111,14 +123,33 @@
         }
 
         .comment-box{
-          .username{
-            font-weight: bold;
-          }
-
           display: inline-block;
           margin-left: 10px;
           min-height: 90px;
           width: 80%;
+
+          p{
+            margin: 0;
+          }
+
+          .username{
+            font-weight: bold;
+          }
+
+          .rate-box {
+            width: 100%;
+            font-size: 16px;
+            color: darkgrey;
+
+            span{
+              cursor: pointer;
+              margin-right: 5px;
+            }
+
+            .reply{
+              margin-left: 20px;
+            }
+          };
         }
       }
     }
@@ -126,6 +157,7 @@
     #recommended-box{
       float: right;
       width: 35%;
+      padding: 10px;
 
       .rec-video{
         margin-bottom: 12px;
