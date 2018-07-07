@@ -2,12 +2,12 @@
   <div class="comment">
     <%= image_tag('64placeholder.svg', :class => 'avatar-thumbnail') %>
     <div class="comment-box">
-      <span class="username">Username</span>
-      <span class="ago">So long ago</span>
+      <span class="username"><%= Faker::HeyArnold.character %></span>
+      <span class="ago"><%= distance_of_time_in_words(Faker::Time.between(Date.today, 2.days.ago)) %> ago</span>
       <p><%= Faker::Lorem.sentence(30) %></p>
       <div class="rate-box">
-        <span class="glyphicon glyphicon-thumbs-up"><% if rand() > 0.3 %><%= rand(1..100) %> <% end %></span>
-        <span class="glyphicon glyphicon-thumbs-down"><% if rand() > 0.7 %><%= rand(1..100) %> <% end %></span>
+        <span class="glyphicon glyphicon-thumbs-up"></span><span class="count"><% if rand() > 0.3 %><%= rand(1..100) %> <% end %></span>
+        <span class="glyphicon glyphicon-thumbs-down"></span><span class="count"><% if rand() > 0.7 %><%= rand(1..100) %> <% end %></span>
         <span class="reply"> REPLY</span>
       </div>
     </div>
