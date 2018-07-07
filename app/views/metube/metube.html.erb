@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
+  <%= javascript_include_tag "/assets/javascripts/infinite-scroll.js" %>
   <title>Metube</title>
 </head>
 
@@ -84,6 +85,8 @@
     </div>
     <div id="metube-comments">
       <%= render "metube/comment" %>
+      <div id="loader-box">
+      </div>
     </div>
     <div class="clear">
     </div>
