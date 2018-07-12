@@ -1,0 +1,2 @@
+class TempkiloController < ApplicationController
+end
