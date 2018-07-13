@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get "gaggle" => "gaggle#gaggle"
   get "eddit" => "eddit#eddit"
   get "metube" => "metube#metube"
+  get "tempkilo" => "tempkilo#tempkilo"
   get "metube_paginate" => "metube#pagination"
 end
