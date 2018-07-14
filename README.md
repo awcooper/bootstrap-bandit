@@ -2,6 +2,14 @@
 
 A collection of mock versions of several popular websites using twitter bootstrap and rails 
 
+Including 
+- Google
+- Reddit
+- Youtube
+- Instagram
+- And potentially many more!
+
+
 ## How to run
 `rails s`
 
