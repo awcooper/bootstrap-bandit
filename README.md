@@ -7,7 +7,7 @@ Including
 - Reddit
 - Youtube
 - Instagram
-- And potentially many more!
+- and potentially many more!
 
 
 ## How to run
