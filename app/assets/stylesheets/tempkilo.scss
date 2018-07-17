@@ -27,12 +27,36 @@
   margin-top: 100px;
   border: 1px solid black;
 
-  .tempkilo-post{
-    .pic {
-      width: 620px;
-      height: 620px;
-      background: darkgray; // This is a filler
-    }
+  #post-feed {
+    width: 620px;
+    .tempkilo-post {
+      border: 1px solid black;
+      height: auto;
+      min-height: 600px;
+      width: auto;
 
+      .glyphicon {
+        display: inline-block;
+      }
+
+      .pic {
+        width: 620px;
+        height: 620px;
+        background: darkgray; // This is a filler
+      }
+
+      .comment-box {
+        height: auto;
+        border: 1px solid black;
+        min-height: 170px;
+
+        textarea{
+          width: 95%;
+          border: 0;
+          margin: 0 auto;
+          border-top: 1px solid grey;
+        }
+      }
+    }
   }
 }
