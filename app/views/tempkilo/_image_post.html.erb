@@ -9,13 +9,18 @@
   <div class="comment-box">
     <span class="glyphicon glyphicon-heart" ></span>
     <span class="glyphicon glyphicon-comment" ></span>
+    <span class="likes">likes <%= rand(1..200)%></span>
     <div class="comments">
-      <div class="comment">
+      <% for i in 0..rand(0..4) %>
+        <div class="comment">
+            <span class="username"><%= Faker::Zelda.character %></span><span class="comment-text"> <%=Faker::Lorem.sentence(rand(5...15)) %></span>
+        </div>
+      <% end %>
 
-      </div>
     </div>
+    <span class="time-ago">1 minute ago</span>
     <form class="comment-input">
-      <textarea></textarea>
+      <textarea placeholder="enter a comment"></textarea>
     </form>
   </div>
 </article>
