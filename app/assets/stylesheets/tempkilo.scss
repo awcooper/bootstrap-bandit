@@ -26,9 +26,25 @@
   margin: 0 auto;
   margin-top: 100px;
   border: 1px solid black;
+  display: flex;
+
+  #story-box{
+    flex: 1;
+    height: 600px;
+    background-color: blue;
+    left: 0;
+
+    #friend-feed{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: fixed;
+    }
+  }
 
   #post-feed {
-    width: 620px;
+    flex: 1;
+
     .tempkilo-post {
       border: 1px solid black;
       height: auto;
