@@ -36,8 +36,8 @@
 
     #icons{
       flex: 1;
+      display: flex;
       border: 1px solid purple;
-      justify-content: flex-end;
 
       span{
         justify-content: flex-end;
@@ -73,6 +73,7 @@
 
       #friend-stories{
         height: 90%;
+        width: 100%;
         overflow-y: scroll;
 
         span {
@@ -98,8 +99,16 @@
       width: auto;
       margin-bottom: 10px;
 
-      .glyphicon {
-        display: inline-block;
+      .post-header{
+        .profile-picture {
+          .glyphicon {
+            font-size: 22px;
+            margin-left: 15px;
+          }
+        }
+        div {
+          display: inline-block;
+        }
       }
 
       .pic {
