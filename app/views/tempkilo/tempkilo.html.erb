@@ -38,7 +38,16 @@
   </div>
   <div id="story-box">
     <div id="friend-feed">
-
+      <div id="current-user">
+        <h3 class="username"> <%= Faker::Zelda.character %></h3>
+      </div>
+      <div id="friend-stories">
+          <% for i in 1..40 %>
+          <div>
+              <span class="glyphicon glyphicon-user"></span><h3 class="username"> <%= Faker::Zelda.character %></h3>
+          </div>
+          <% end %>
+      </div>
     </div>
   </div>
 </div>

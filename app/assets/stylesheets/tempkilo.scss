@@ -16,7 +16,6 @@
   position: fixed;
   background: #fff;
   top: 0;
-  border: 1px solid black;
 
   #header-content{
     margin: 0 auto;
@@ -54,20 +53,38 @@
   height: auto;
   margin: 0 auto;
   margin-top: 100px;
-  border: 1px solid black;
   display: flex;
 
   #story-box{
     flex: 1;
-    height: 600px;
-    background-color: blue;
     left: 0;
 
     #friend-feed{
-      width: 100px;
-      height: 100px;
-      background-color: red;
+      width: 300px;
+      padding: 10px;
+      height: 500px;
       position: fixed;
+      border: 1px dashed grey; //just so I can see it
+
+      #current-user{
+        height: 9%;
+
+      }
+
+      #friend-stories{
+        height: 90%;
+        overflow-y: scroll;
+
+        span {
+          display: inline-block;
+          margin-right: 8px;
+          font-size: 16px;
+        }
+
+        h3{
+          display: inline-block;
+        }
+      }
     }
   }
 
@@ -79,6 +96,7 @@
       height: auto;
       min-height: 600px;
       width: auto;
+      margin-bottom: 10px;
 
       .glyphicon {
         display: inline-block;
