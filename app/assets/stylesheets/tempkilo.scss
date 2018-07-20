@@ -16,13 +16,14 @@
   position: fixed;
   background: #fff;
   top: 0;
+  z-index: 100;
+  border-bottom: 1px solid grey;
 
   #header-content{
     margin: 0 auto;
     height: 100%;
     width: 1000px;
     display: flex;
-    border: 1px solid green;
 
     #logo{
       flex: 1;
@@ -37,7 +38,6 @@
     #icons{
       flex: 1;
       display: flex;
-      border: 1px solid purple;
 
       span{
         justify-content: flex-end;
@@ -48,7 +48,7 @@
 }
 
 #tempkilo-content{
-  width: 1300px;
+  width: 1000px;
   min-height: 50px;
   height: auto;
   margin: 0 auto;
