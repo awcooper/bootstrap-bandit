@@ -2,9 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$tempiko-body-grey: #FAFAFA;
+
 #tempkilo-body{
   width: 100%;
   margin: 0;
+  background-color: $tempiko-body-grey;
   padding: 0;
 
 }
@@ -92,7 +95,7 @@
     flex: 1;
 
     .tempkilo-post {
-      border: 1px solid black;
+      border: 1px solid grey;
       height: auto;
       min-height: 600px;
       width: auto;
