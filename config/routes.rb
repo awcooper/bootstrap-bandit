@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "metube" => "metube#metube"
   get "tempkilo" => "tempkilo#tempkilo"
   get "metube_paginate" => "metube#pagination"
+  get "gethub" => "gethub#gethub"
 end

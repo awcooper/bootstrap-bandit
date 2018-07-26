@@ -1,3 +1,32 @@
 // Place all the styles related to the gethub controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body #gethub-body{
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+#gethub-header{
+  background-color: #000;
+  height: 60px;
+  display: flex;
+}
+
+
+#gethub-content{
+  width: 1000px;
+  display: flex;
+  padding-top: 20px;k
+
+  #gethub-sidebar {
+    flex: 1;
+  }
+
+  #gethub-feed {
+    flex: 2;
+    height: auto;
+  }
+}

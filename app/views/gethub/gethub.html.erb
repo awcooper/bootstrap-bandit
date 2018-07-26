@@ -8,8 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
-  <%= javascript_include_tag "/assets/javascripts/infinite-scroll.js" %>
-  <title>Metube</title>
+  <title>GetHub</title>
 </head>
 
 <body id="gethub-body">
@@ -28,7 +27,7 @@
     </div>
     <div id="gethub-feed">
       <% for i in 1..10 %>
-        <%= render "gethub/feed_post" %>
+        <%= render "gethub/feed_posts" %>
       <% end %>
     </div>
     <div id="more-button"></div>
