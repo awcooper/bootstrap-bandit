@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$gehub-grey-border: grey;
+
+
 body #gethub-body{
   width: 100%;
   height: auto;
@@ -19,10 +22,23 @@ body #gethub-body{
 #gethub-content{
   width: 1000px;
   display: flex;
-  padding-top: 20px;k
+  padding-top: 20px;
 
   #gethub-sidebar {
     flex: 1;
+
+    #identity-box{
+    }
+
+    #repositories{
+      padding: 10px;
+      border: 1px solid $gehub-grey-border;
+    }
+
+    #teams{
+      border: 1px solid $gehub-grey-border;
+      padding: 10px;
+    }
   }
 
   #gethub-feed {
