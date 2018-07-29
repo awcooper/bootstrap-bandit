@@ -19,29 +19,32 @@ body #gethub-body{
 }
 
 
-#gethub-content{
+#gethub-container{
   width: 1000px;
   display: flex;
   padding-top: 20px;
-
+  margin: 0 auto;
   #gethub-sidebar {
     flex: 1;
 
     #identity-box{
+      margin-bottom: 10px;
     }
 
     #repositories{
       padding: 10px;
       border: 1px solid $gehub-grey-border;
+      margin-bottom: 10px;
     }
 
     #teams{
       border: 1px solid $gehub-grey-border;
       padding: 10px;
+      margin-bottom: 10px;
     }
   }
 
-  #gethub-feed {
+  #gethub-content {
     flex: 2;
     height: auto;
   }
