@@ -1,0 +1,19 @@
+<% for i in 1..10 %>
+
+  <div class="feed-post">
+    <div class="picture-container"><span class="glyphicon glyphicon-user"/></div>
+    <div class="commit-summary">
+      <div class=commit-info">
+        <a><% Faker::GameOfThrones.character %></a> pushed to <a><% Faker::GameOfThrones.city %></a>
+      </div>
+      <div class="commit-messages">
+        <span>commit pushed to <a><%= Faker::GameOfThrones.house %></a></span>
+        <% for i in 1..(rand (2..3)) %>
+          <div>
+            <span class="glyphicon glyphicon-user"></span><a><%= Faker::Lorem.characters 6 %></a><span><%= Faker::Lorem.sentence(rand 3) %></span>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>

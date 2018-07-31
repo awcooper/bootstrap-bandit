@@ -47,5 +47,29 @@ body #gethub-body{
   #gethub-content {
     flex: 2;
     height: auto;
+
+    #gethub-feed{
+      width: 100%;
+      padding: 10px;
+
+      .feed-post{
+        display: flex;
+        padding: 10px;
+
+        .picture-container{
+          font-size: 36px;
+        }
+
+        .commit-summary{
+          width: 100%;
+
+          .commit-messages {
+            border: 1px solid $gehub-grey-border;
+            padding: 10px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
   }
 }
