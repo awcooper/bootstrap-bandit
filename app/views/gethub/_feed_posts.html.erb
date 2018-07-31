@@ -4,13 +4,19 @@
     <div class="picture-container"><span class="glyphicon glyphicon-user"/></div>
     <div class="commit-summary">
       <div class=commit-info">
-        <a><% Faker::GameOfThrones.character %></a> pushed to <a><% Faker::GameOfThrones.city %></a>
+        <a><% Faker::GameOfThrones.character %></a> pushed to <a><%= Faker::GameOfThrones.city %></a>
       </div>
       <div class="commit-messages">
-        <span>commit pushed to <a><%= Faker::GameOfThrones.house %></a></span>
-        <% for i in 1..(rand (2..3)) %>
+        <% number_of_commennts = rand(1..10) %>
+        <span><%= number_of_commennts %> commits pushed to <a><%= Faker::GameOfThrones.house %></a></span>
+        <% for i in 1..([number_of_commennts,4].min) %>
           <div>
-            <span class="glyphicon glyphicon-user"></span><a><%= Faker::Lorem.characters 6 %></a><span><%= Faker::Lorem.sentence(rand 3) %></span>
+            <span class="glyphicon glyphicon-user"></span><a><%= Faker::Lorem.characters 6 %></a><span><%= Faker::Lorem.sentence(rand(1..4)) %></span>
+          </div>
+        <% end %>
+        <% if number_of_commennts > 4 %>
+          <div>
+            <a class="more-commits"><%= number_of_commennts -  4 %> more commits >></a>
           </div>
         <% end %>
       </div>

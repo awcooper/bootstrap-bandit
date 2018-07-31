@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$gehub-grey-border: grey;
-
+$gehub-grey-border: lightgrey;
+$gehub-dark-grey: darkgrey;
+$gehub-dark-grey: #9E9E9E;
 
 body #gethub-body{
   width: 100%;
@@ -34,13 +35,22 @@ body #gethub-body{
     #repositories{
       padding: 10px;
       border: 1px solid $gehub-grey-border;
-      margin-bottom: 10px;
+      margin: 10px 0px 10px 0px;
+      a {
+        margin:  0 5px 0 5px;
+      }
+
     }
 
     #teams{
       border: 1px solid $gehub-grey-border;
       padding: 10px;
-      margin-bottom: 10px;
+      margin: 10px 0px 10px 0px;
+
+      a {
+        margin:  0 5px 0 5px;
+      }
+
     }
   }
 
@@ -55,18 +65,29 @@ body #gethub-body{
       .feed-post{
         display: flex;
         padding: 10px;
+        border-bottom: 1px solid $gehub-grey-border;
 
         .picture-container{
-          font-size: 36px;
+          font-size: 26px;
+          width: 34px;
         }
 
         .commit-summary{
           width: 100%;
 
+          .more-commits{
+            color: $gehub-dark-grey;
+            cursor: pointer;
+          }
+
           .commit-messages {
+            margin-top: 8px;
             border: 1px solid $gehub-grey-border;
             padding: 10px;
             border-radius: 4px;
+            span {
+              margin:  0 5px 0 5px;
+            }
           }
         }
       }
