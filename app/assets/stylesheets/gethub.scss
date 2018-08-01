@@ -16,7 +16,31 @@ body #gethub-body{
 #gethub-header{
   background-color: #000;
   height: 60px;
-  display: flex;
+
+  #navbar-container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+
+    #site-logo{
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    #search-bar{
+      flex: 1;
+    }
+
+    #icon{
+      color: white;
+      font-size: 30px;
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
 }
 
 
@@ -65,11 +89,12 @@ body #gethub-body{
       .feed-post{
         display: flex;
         padding: 10px;
+        margin: 10px 0 10px 0;
         border-bottom: 1px solid $gehub-grey-border;
 
         .picture-container{
           font-size: 26px;
-          width: 34px;
+          margin-right: 16px;
         }
 
         .commit-summary{
