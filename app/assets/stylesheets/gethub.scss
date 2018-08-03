@@ -5,6 +5,7 @@
 $gehub-grey-border: lightgrey;
 $gehub-dark-grey: darkgrey;
 $gehub-dark-grey: #9E9E9E;
+$gethub-off-grey: #434348;
 
 a{
   //Remember to make a global file for this.
@@ -26,6 +27,7 @@ body #gethub-body{
     width: 1000px;
     margin: 0 auto;
     display: flex;
+    height: 100%;
 
     #site-logo{
       flex: 1;
@@ -36,25 +38,45 @@ body #gethub-body{
 
     #nav-bar{
       flex: 8;
+      display: flex;
+      justify-content: center;
+      height: 100%;
 
       h2{
         display: inline-block;
-        margin: 0;
-        padding: 0;
+        margin: 0 0 0 15px;
+        padding-top: 20px;
         color: white;
         font-size: 16px;
+        height: auto;
       }
 
       div.search{
-        margin-top: 20px;
         width: 400px;
         display: inline-block;
+        padding-top: 13px;
+        height: auto;
+
+        input{
+          background-color: $gethub-off-grey;
+          color: white;
+          border: none;
+        }
+
+        .input-group-addon{
+          background-color: $gethub-off-grey;
+          border: none;
+          span {
+            color: white;
+          }
+        }
       }
     }
 
     #icon{
       color: white;
       font-size: 30px;
+      padding-top: 15px;
       flex: 1;
       display: flex;
       justify-content: flex-end;
