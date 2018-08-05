@@ -2,10 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$gehub-grey-border: lightgrey;
+$gethub-grey-border: lightgrey;
 $gehub-dark-grey: darkgrey;
 $gehub-dark-grey: #9E9E9E;
 $gethub-off-grey: #434348;
+$gethub-more-blue: blue;
+$gethub-light-grey: #f9f9f9;
 
 a{
   //Remember to make a global file for this.
@@ -15,8 +17,8 @@ a{
 body #gethub-body{
   width: 100%;
   height: auto;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 #gethub-header{
@@ -30,10 +32,15 @@ body #gethub-body{
     height: 100%;
 
     #site-logo{
-      flex: 1;
+      width: auto;
       color: white;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
+
+      .logo{
+        height: 60px;
+        width: 60px;
+      }
     }
 
     #nav-bar{
@@ -52,7 +59,7 @@ body #gethub-body{
       }
 
       div.search{
-        width: 400px;
+        width: 50%;
         display: inline-block;
         padding-top: 13px;
         height: auto;
@@ -75,7 +82,7 @@ body #gethub-body{
 
     #icon{
       color: white;
-      font-size: 30px;
+      font-size: 20px;
       padding-top: 15px;
       flex: 1;
       display: flex;
@@ -93,29 +100,48 @@ body #gethub-body{
   margin: 0 auto;
   #gethub-sidebar {
     flex: 1;
+    margin-right: 30px;
 
     #identity-box{
       margin-bottom: 10px;
     }
 
-    #repositories{
-      padding: 10px;
-      border: 1px solid $gehub-grey-border;
-      margin: 10px 0px 10px 0px;
-      a {
-        margin:  0 5px 0 5px;
+
+    .sidebar-box{
+      border: 1px solid $gethub-grey-border;
+      margin: 10px 0 10px 0;
+
+      .box-content{
+        padding: 20px;
+        input{
+          margin-bottom: 10px;
+        }
+
+        a {
+          margin:  0 5px 0 5px;
+        }
       }
+
+      .box-header{
+        border-bottom: 1px solid $gethub-grey-border;
+        padding: 10px;
+        background-color: $gethub-light-grey;
+
+        h3{
+          margin: 0;
+          color: $gethub-off-grey;
+          font-size: 16px;
+          font-family: Helvetica;
+          font-weight: bold;
+        }
+      }
+    }
+
+    #repositories{
 
     }
 
     #teams{
-      border: 1px solid $gehub-grey-border;
-      padding: 10px;
-      margin: 10px 0px 10px 0px;
-
-      a {
-        margin:  0 5px 0 5px;
-      }
 
     }
   }
@@ -123,6 +149,20 @@ body #gethub-body{
   #gethub-content {
     flex: 2;
     height: auto;
+    #more-button{
+      width: 100%;
+      border: 1px solid $gethub-grey-border;
+      text-align: center;
+      color: $gethub-more-blue;
+      padding: 10px;
+      height: 37px;
+    }
+
+    #more-button:hover{
+      background-color: $gethub-light-grey;
+      cursor: pointer;
+    }
+
 
     #gethub-feed{
       width: 100%;
@@ -132,7 +172,7 @@ body #gethub-body{
         display: flex;
         padding: 10px;
         margin: 10px 0 10px 0;
-        border-bottom: 1px solid $gehub-grey-border;
+        border-bottom: 1px solid $gethub-grey-border;
 
         .picture-container{
           font-size: 26px;
@@ -149,7 +189,7 @@ body #gethub-body{
 
           .commit-messages {
             margin-top: 8px;
-            border: 1px solid $gehub-grey-border;
+            border: 1px solid $gethub-grey-border;
             padding: 10px;
             border-radius: 4px;
             span {

@@ -15,10 +15,13 @@
 
   <div id="gethub-header">
     <div id="navbar-container">
+      <div id="site-logo">
+        <%= image_tag("gethub-logo.png", :class => "logo") %>
+      </div>
       <div id="nav-bar">
         <div class="search">
           <div class="input-group ">
-            <input type="text" class="form-control" id="gaggle-search" aria-describedby="basic-addon2">
+            <input type="text" class="form-control"  aria-describedby="basic-addon2">
             <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-itallic"></span></span>
           </div>
         </div>
@@ -44,11 +47,11 @@
 
     </div>
     <div id="gethub-feed">
-      <% for i in 1..10 %>
-        <%= render "gethub/feed_posts" %>
-      <% end %>
+      <%= render "gethub/feed_posts" %>
     </div>
-    <div id="more-button"></div>
+    <div id="more-button">
+      More
+    </div>
   </div>
   <div id="gethub-footer">
   </div>
