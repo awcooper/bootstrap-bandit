@@ -1,0 +1,66 @@
+// Place all the styles related to the rikipeida controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$rikipeida-grey: #f6f6f6;
+
+#rikipeida-body{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+#rikipeida-nav{
+  width: 180px;
+  background-color: $rikipeida-grey;
+  height:100%;
+
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 15px 10px 15px 10px;
+
+    li {
+    }
+
+    .header{
+      border-bottom: 1px solid grey;
+      color: black;
+    }
+  }
+}
+
+#rikipeida-content{
+  width: 100%;
+  height: 2000px;
+
+
+  #rikipeida-top-nav{
+    width: 100%;
+
+    .content-nav {
+      ul {
+        li {
+          display: inline-block;
+          color: blue;
+        }
+      }
+    }
+
+    #nav-left{
+      float: left;
+    }
+
+    #nav-right{
+      float: right;
+    }
+   }
+
+  #article-container{
+    display: block;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+  }
+}
