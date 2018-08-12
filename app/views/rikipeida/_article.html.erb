@@ -1,0 +1,8 @@
+<h1><%= Faker::Lorem.sentence(rand(2..5)) %></h1>
+<hr>
+<% for i in 3..13 %>
+  <h2><%= Faker::Lorem.sentence(rand(1..12)) %></h2>
+  <% for i in 1..6 %>
+    <p><%= Faker::Lorem.paragraph(10..30) %></p>
+    <% end %>
+<% end %>

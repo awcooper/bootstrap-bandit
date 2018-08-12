@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $rikipeida-grey: #f6f6f6;
+$rikipeida-dark-grey: #aaaaaa;
 
 #rikipeida-body{
   width: 100%;
@@ -62,5 +63,13 @@ $rikipeida-grey: #f6f6f6;
     border: 1px solid black;
     height: 100%;
     width: 100%;
+
+    .card{
+      border: 1px solid $rikipeida-dark-grey;
+      background-color: $rikipeida-grey;
+      width: 300px;
+      height: 800px;
+      float: right;
+    }
   }
 }
