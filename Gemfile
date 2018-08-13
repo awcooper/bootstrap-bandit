@@ -28,7 +28,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-gem 'faker'
+gem 'faker', '~> 1.9.0'
 gem 'will_paginate', '~> 3.1.0'
 gem 'google-api-client', '~> 0.11'
 gem 'retriable', '~> 2.0'

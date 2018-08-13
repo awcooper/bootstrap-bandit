@@ -3,6 +3,6 @@
 <% for i in 3..13 %>
   <h2><%= Faker::Lorem.sentence(rand(1..12)) %></h2>
   <% for i in 1..6 %>
-    <p><%= Faker::Lorem.paragraph(10..30) %></p>
+    <p><%= Faker::Lorem.paragraph(10..30) %> <% if (rand() > 0.8) %><img src="<%= Faker::LoremFlickr.image("50x60") %>"/>  <% end %></p>
     <% end %>
 <% end %>
