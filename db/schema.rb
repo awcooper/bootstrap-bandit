@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20180606024921) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "eddit_posts", force: :cascade do |t|
     t.integer "score"
     t.string "username"
