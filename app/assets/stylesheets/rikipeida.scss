@@ -90,8 +90,9 @@ $rikipeida-article-blue-border: #a7d7f9;
       border: 1px solid $rikipeida-dark-grey;
       background-color: $rikipeida-grey;
       width: 300px;
-      height: 400px;
+      height: auto;
       float: right;
+      padding: 10px;
     }
   }
 }

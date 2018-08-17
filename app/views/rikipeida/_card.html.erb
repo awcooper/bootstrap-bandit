@@ -1,3 +1,14 @@
 <div class="card">
-
+  <img class="pright" src="<%= Faker::LoremFlickr.image("280x180")  %>"/>
+  <h2><%= Faker::Lorem.sentence(5) %></h2>
+  <table>
+    <th>
+    </th>
+    <% for i in 1..10 %>
+      <tr>
+        <td><%= Faker::Lorem.word %></td>
+        <td><%= Faker::Lorem.word %></td>
+      </tr>
+    <% end %>
+  </table>
 </div>
