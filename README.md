@@ -13,7 +13,7 @@ Including
 
 Check it out here
 
-https://bootstrap-bandit.herokuapp.com/gethub
+https://bootstrap-bandit.herokuapp.com/
 
 ## How to run
 `rails s`
