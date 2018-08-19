@@ -7,8 +7,13 @@ Including
 - Reddit
 - Youtube
 - Instagram
+- Github
+- Wikipeida
 - and potentially many more!
 
+Check it out here
+
+https://bootstrap-bandit.herokuapp.com/gethub
 
 ## How to run
 `rails s`
