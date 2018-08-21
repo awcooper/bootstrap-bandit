@@ -13,6 +13,8 @@
 
 <body id="rikipeida-body">
   <div id="rikipeida-nav">
+    <%= image_tag("rikipeida-logo.png", :id => "rikipeida-logo") %>
+    <%= image_tag("rikipeida-logo-text.png", :id => "rikipeida-logo-text") %>
     <ul>
       <li class="header"><%= Faker::Lorem.word %></li>
       <% for i in 1..10 %>
@@ -37,7 +39,6 @@
         <li><a><%= Faker::Lorem.word %></a></li>
       <% end %>
     </ul>
-
   </div>
 
   <div id="rikipeida-content">

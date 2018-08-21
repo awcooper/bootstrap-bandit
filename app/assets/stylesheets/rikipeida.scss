@@ -15,14 +15,24 @@ $rikipeida-article-blue-border: #a7d7f9;
   width: 180px;
   background-color: $rikipeida-grey;
   height:auto;
+  padding: 30px;
 
+  #rikipeida-logo{
+    width: 150px;
+  }
+
+  #rikipeida-logo-text{
+    width: 120px;
+    margin-bottom: 40px;
+  }
 
   ul{
     list-style: none;
     padding: 0;
-    margin: 15px 10px 15px 30px;
+    margin: 15px 0 15px 0;
 
     li {
+      font-size: 12px;
     }
 
     .header{
