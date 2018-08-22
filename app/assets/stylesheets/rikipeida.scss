@@ -5,6 +5,7 @@
 $rikipeida-grey: #f6f6f6;
 $rikipeida-dark-grey: #aaaaaa;
 $rikipeida-article-blue-border: #a7d7f9;
+
 #rikipeida-body{
   width: 100%;
   height: auto;
@@ -46,9 +47,33 @@ $rikipeida-article-blue-border: #a7d7f9;
   width: 100%;
   height: auto;
 
+  .picture-frame{
+    background-color: $rikipeida-grey;
+    padding: 5px;
+    height: auto;
+    width: auto;
+
+    img{
+      display: block;
+    }
+
+    p {
+      margin: 0;
+      padding: 5px;
+      width: 100%;
+    }
+  }
+
   .pright{
     float: right;
     clear: right;
+    margin: 0 0 0 20px;
+  }
+
+  .pleft{
+    float: left;
+    clear: left;
+    margin: 0 20px 0 0;
   }
 
   #rikipeida-top-nav{
@@ -107,9 +132,9 @@ $rikipeida-article-blue-border: #a7d7f9;
     }
 
     h2{
-      font-family: Georgia sans-serif;
-      font-size: 21px;
-      border-bottom: 1px solid $rikipeida-dark-grey;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 17px;
     }
     p{
       font-family: sans-serif;

@@ -6,6 +6,13 @@
 <% for i in 3..13 %>
   <h2><%= Faker::Lorem.sentence(rand(1..12)).chomp('.') %></h2>
   <% for i in 1..6 %>
-    <p><%= Faker::Lorem.paragraph(10..50) %> <% if (rand() > 0.95) %><img class="pright" src="<%= Faker::LoremFlickr.image %>"/>  <% end %></p>
+    <p><%= Faker::Lorem.paragraph(10..50) %>
+      <% if (rand() > 0.95) %>
+        <div class="picture-frame <%= ["pright", "pleft"].sample %>">
+          <img src="<%= Faker::LoremFlickr.image("200x180") %>"/>
+          <p> <%= Faker::Lorem.sentence(rand(4..10)) %></p>
+        </div>
+      <% end %>
+    </p>
     <% end %>
 <% end %>
