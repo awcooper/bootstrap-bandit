@@ -10,7 +10,7 @@
       <% if (rand() > 0.95) %>
         <div class="picture-frame <%= ["pright", "pleft"].sample %>">
           <img src="<%= Faker::LoremFlickr.image("200x180") %>"/>
-          <p> <%= Faker::Lorem.sentence(rand(4..10)) %></p>
+          <p> <%= Faker::Lorem.sentence(3) %></p>
         </div>
       <% end %>
     </p>
