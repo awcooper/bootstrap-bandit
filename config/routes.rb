@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get "metube_paginate" => "metube#pagination"
   get "rikipeida" => "rikipeida#rikipeida"
   get "gethub" => "gethub#gethub"
+  get "webfliks" => "webfliks#webfliks"
 end
