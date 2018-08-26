@@ -14,11 +14,11 @@
 <body id="webfliks-body">
 
 <% for i in 1..10 %>
-  <h2><%= Faker::Lorem.sentence(rand(2..5)).chomp('.') %></h2>
   <div id="carousel-container">
+    <h2><%= Faker::Lorem.sentence(rand(2..5)).chomp('.') %></h2>
     <% for i in 1..10 %>
       <div class="carousel-card">
-        <img src="<%= Faker::LoremFlickr.image("270x150") %>">
+        <img src="<%= Faker::LoremFlickr.image("270x150", [@image_keywords.sample]) %>">
         <div class="card-text">
           <h3><%= Faker::Lorem.sentence(rand(2..5)) %></h3>
           <p><%= Faker::Lorem.paragraph(rand(5..15)) %></p>
