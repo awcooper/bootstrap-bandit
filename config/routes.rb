@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get "rikipeida" => "rikipeida#rikipeida"
   get "gethub" => "gethub#gethub"
   get "webfliks" => "webfliks#webfliks"
+  get "wahoo" => "wahoo#wahoo"
 end
