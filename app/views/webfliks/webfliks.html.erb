@@ -12,21 +12,39 @@
 </head>
 
 <body id="webfliks-body">
-
-<% for i in 1..10 %>
-  <div id="carousel-container">
-    <h2><%= Faker::Lorem.sentence(rand(2..5)).chomp('.') %></h2>
-    <% for i in 1..10 %>
-      <div class="carousel-card">
-        <img src="<%= Faker::LoremFlickr.image("270x150", [@image_keywords.sample]) %>">
-        <div class="card-text">
-          <h3><%= Faker::Lorem.sentence(rand(2..5)) %></h3>
-          <p><%= Faker::Lorem.paragraph(rand(5..15)) %></p>
-        </div>
-      </div>
-    <% end %>
+<div id="webfliks-nav">
+  <div id="topnav-left">
+    <a>Home</a>
+    <a>TV Shows</a>
+    <a>Movies</a>
+    <a>About</a>
   </div>
-<% end %>
+  <div id="topnav-right">
+    <a><span class="glyphicon glyphicon-search"></span></a>
+    <a>Kids</a>
+    <a>DVD</a>
+    <a><span class="glyphicon glyphicon-bell"></span></a>
+  </div>
+  <div class="clear"/>
+</div>
+<div id="webfliks-content">
+  <% for i in 1..10 %>
+    <div id="carousel-container">
+      <div class="carousel-button">
+      </div>
+      <h2><%= Faker::Lorem.sentence(rand(2..5)).chomp('.') %></h2>
+      <% for i in 1..10 %>
+        <div class="carousel-card">
+          <img src="<%= Faker::LoremFlickr.image("270x150", [@image_keywords.sample]) %>">
+          <div class="card-text">
+            <h3><%= Faker::Lorem.sentence(rand(2..5)) %></h3>
+            <p><%= Faker::Lorem.paragraph(rand(5..15)) %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
 </body>
 <!-- Bootstrap core JavaScript
 ================================================== -->

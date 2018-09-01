@@ -6,4 +6,9 @@ $(document).ready(function(){
         $(this).find('img').animate({height:150, width:270},100);
         $(this).find('.card-text').fadeOut(100);
     } );
+
+
+    $(".carousel-button").click(function(){
+        $(this).sibling('.carousel-card').animate({marginLeft:"+=180"})
+    })
 });
