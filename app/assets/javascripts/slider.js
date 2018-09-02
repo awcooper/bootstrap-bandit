@@ -8,7 +8,14 @@ $(document).ready(function(){
     } );
 
 
-    $(".carousel-button").click(function(){
-        $(this).sibling('.carousel-card').animate({marginLeft:"+=180"})
-    })
+    $(".carousel-button.right").click(function(){
+        const container = $(this).siblings('.card-container');
+        container.animate({left:`+=${parseInt(container.width()/4)}`});
+    });
+
+    $(".carousel-button.left").click(function(){
+        const container = $(this).siblings('.card-container');
+        container.animate({left:`+=${parseInt(-container.width()/4)}`});
+    });
+
 });

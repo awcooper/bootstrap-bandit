@@ -65,7 +65,7 @@
   }
 }
 
-#carousel-container{
+#carousel{
   width: 100%;
   height: 280px;
   overflow-x: hidden;
@@ -74,13 +74,28 @@
   flex-direction: row;
   position: relative;
 
+  .card-container{
+    position: absolute;
+    white-space: nowrap;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: auto;
+  }
+
   .carousel-button{
     position: absolute;
     width: 50px;
-    top: 0;
-    left: 0;
     z-index: 3000;
     height: 100%;
+
+    &.right{
+      right: 0;
+    }
+
+    &.left{
+      left: 0;
+    }
   }
 
   .carousel-button:hover{
@@ -89,7 +104,7 @@
 
   h2{
     color: white;
-    top: 0;
+    top: 20px;
     left: 0;
     position: absolute;
     display: block;

@@ -29,19 +29,23 @@
 </div>
 <div id="webfliks-content">
   <% for i in 1..10 %>
-    <div id="carousel-container">
-      <div class="carousel-button">
+    <div id="carousel">
+      <div class="carousel-button right">
       </div>
       <h2><%= Faker::Lorem.sentence(rand(2..5)).chomp('.') %></h2>
-      <% for i in 1..10 %>
-        <div class="carousel-card">
-          <img src="<%= Faker::LoremFlickr.image("270x150", [@image_keywords.sample]) %>">
-          <div class="card-text">
-            <h3><%= Faker::Lorem.sentence(rand(2..5)) %></h3>
-            <p><%= Faker::Lorem.paragraph(rand(5..15)) %></p>
+      <div class="card-container">
+        <% for i in 1..10 %>
+          <div class="carousel-card">
+            <img src="<%= Faker::LoremFlickr.image("270x150", [@image_keywords.sample]) %>">
+            <div class="card-text">
+              <h3><%= Faker::Lorem.sentence(rand(2..5)) %></h3>
+              <p><%= Faker::Lorem.paragraph(rand(5..15)) %></p>
+            </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
+      <div class="carousel-button left">
+      </div>
     </div>
   <% end %>
 </div>
