@@ -15,7 +15,7 @@
       <input type="text" class="form-control" aria-label="...">
       <% for i in 1..10 %>
         <div class="repo-link">
-          <span class="glyphicon glyphicon-lock"></span><a>reporistory/project</a>
+          <span class="glyphicon glyphicon-lock"></span><a><%= Faker::GameOfThrones.city.split(' ').join('-') %>/<%= Faker::GameOfThrones.city.split(' ').join('-') %></a>
         </div>
       <% end %>
     </div>
@@ -32,7 +32,7 @@
     </div>
     <% for i in 1..3 %>
       <div class="repo-link">
-        <span class="glyphicon glyphicon-tower"></span><a>Cool Team</a>
+        <span class="glyphicon glyphicon-tower"></span><a><%= Faker::GameOfThrones.house %></a>
       </div>
     <% end %>
   </div>
