@@ -15,8 +15,8 @@ $(document).ready(function(){
 
     $(".carousel-button.left").click(function(){
         const container = $(this).siblings('.card-container');
-        if ( parseInt(container.css('left')) <= Math.floor(-container.width()*3/4) ){
-          $(this).parent().append( container.clone().css({left: +container.width()/4}));
+        if ( parseInt(container.css('left')) <= Math.floor(-container.width()*1/4) ){
+            $(this).parent().append( container.clone().css({left: + container.width()/4}));
             $(this).siblings('.card-container').animate({left: `+=${parseInt(-container.width() / 4)}`}, () => container.remove() );
         }
         else {
