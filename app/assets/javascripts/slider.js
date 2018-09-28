@@ -10,7 +10,13 @@ $(document).ready(function(){
 
     $(".carousel-button.right").click(function(){
         const container = $(this).siblings('.card-container');
-        container.animate({left:`+=${parseInt(container.width()/4)}`});
+        if ( parseInt(container.css('left')) <= Math.floor(-container.width()*1/4) ){
+            $(this).parent().append( container.clone().css({right: + container.width()/4}));
+            $(this).siblings('.card-container').animate({right: `+=${parseInt(-container.width() / 4)}`}, () => container.remove() );
+        }
+        else {
+            container.animate({right: `+=${Math.ceil(parseFloat(-container.width() / 4))}`});
+        }
     });
 
     $(".carousel-button.left").click(function(){
